@@ -1,0 +1,26 @@
+package application;
+
+import javafx.fxml.FXML;
+
+import javafx.event.ActionEvent;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+
+public class applicationController {
+	@FXML
+	private Label lbRe;
+
+	// Event Listener on Button.onAction
+	@FXML
+	public void numbers(ActionEvent event) {
+		// TODO 숫자를 눌렀을때
+		String num = ((Button)event.getSource()).getText();
+		lbRe.setText(num);
+	}
+
+	@FXML
+	public void oprater(ActionEvent event) {
+		// TODO 계산 오퍼레이터를 눌렀을때
+	}
+
+}

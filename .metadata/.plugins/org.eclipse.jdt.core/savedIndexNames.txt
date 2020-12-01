@@ -1,0 +1,23 @@
+INDEX VERSION 1.129+D:\JavaFx\eclipse-SDK-4.6.0-win32-x86_64-distro-2.4.0\javaFx-workspace\.metadata\.plugins\org.eclipse.jdt.core
+4279352321.index
+2626954884.index
+3687501370.index
+2247224413.index
+2504246175.index
+3506654133.index
+2728898164.index
+1632238658.index
+2513918375.index
+3991135902.index
+278338947.index
+299607678.index
+2102515725.index
+3339339020.index
+4102373108.index
+3469683795.index
+133969532.index
+2435432913.index
+1888024490.index
+654717868.index
+1239897806.index
+344841355.index
