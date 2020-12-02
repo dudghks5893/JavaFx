@@ -1,0 +1,38 @@
+package application;
+
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXTextField;
+import javafx.fxml.FXML;
+import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
+
+
+public class LoginController {
+
+
+    @FXML
+    private JFXButton log;
+
+    @FXML
+    private JFXPasswordField ps;
+
+    @FXML
+    private JFXTextField id;
+
+    @FXML
+    private Label cant;
+
+    @FXML
+    void handleBtn(ActionEvent event) {
+    	//아이디가 myid 이고 패스워드가 mypass 다
+    	if(id.getText().equals("dudghks") && ps.getText().equals("1234")){
+    		cant.setText("로그인 성공!");
+    	}
+    	else {
+    		cant.setText("로그인 실패!");
+    	}
+
+    }
+
+	}

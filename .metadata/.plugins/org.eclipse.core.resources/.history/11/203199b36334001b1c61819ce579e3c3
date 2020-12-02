@@ -1,0 +1,41 @@
+package view;
+
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXCheckBox;
+import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXTextField;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+
+public class SignUPController {
+
+    @FXML
+    private JFXTextField fullname;
+
+    @FXML
+    private JFXPasswordField password;
+
+    @FXML
+    private JFXTextField email;
+
+    @FXML
+    private JFXCheckBox check;
+
+    @FXML
+    private JFXButton signup;
+
+    @FXML
+    private JFXButton login;
+
+    @FXML
+    void goLogin(ActionEvent event) {
+
+    }
+
+    @FXML
+    void signUp(ActionEvent event) {
+
+    }
+
+}

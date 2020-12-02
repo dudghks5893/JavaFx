@@ -1,0 +1,37 @@
+package view;
+
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXTextField;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.layout.AnchorPane;
+
+public class LoginController {
+
+    @FXML
+    private AnchorPane anPane;
+
+    @FXML
+    private JFXTextField tfFname;
+
+    @FXML
+    private JFXPasswordField tfPass;
+
+    @FXML
+    private JFXButton btnRegister;
+
+    @FXML
+    private JFXButton btnLogin;
+
+    @FXML
+    void createLogin(ActionEvent event) {
+    	System.out.println("로그인 페이지로");
+    }
+
+    @FXML
+    void createregister(ActionEvent event) {
+    	System.out.println("가입 페이지로");
+    }
+}

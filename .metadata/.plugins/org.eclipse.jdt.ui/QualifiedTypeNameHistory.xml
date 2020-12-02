@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
-<fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
 <fullyQualifiedTypeName name="javafx.fxml.FXMLLoader"/>
 <fullyQualifiedTypeName name="javafx.scene.Scene"/>
 <fullyQualifiedTypeName name="javafx.scene.Parent"/>
 <fullyQualifiedTypeName name="javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter.DEFAULT"/>
 <fullyQualifiedTypeName name="application.LoginController"/>
+<fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
+<fullyQualifiedTypeName name="javafx.stage.Stage"/>
+<fullyQualifiedTypeName name="javafx.fxml.Initializable"/>
+<fullyQualifiedTypeName name="application.Message"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="java.beans.Statement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
 </qualifiedTypeNameHistroy>
