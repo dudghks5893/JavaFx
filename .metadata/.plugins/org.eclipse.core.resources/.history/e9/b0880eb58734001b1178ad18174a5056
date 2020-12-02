@@ -39,7 +39,7 @@ public class SignUPController implements Initializable {
 
     @FXML
     void signUp(ActionEvent event) {
-    	//DB로 입력 내용을 저장한다
+    	//DB로 입력 내용을 저장한다.
     }
 
 	@Override
