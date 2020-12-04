@@ -1,6 +1,23 @@
 package view;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import com.jfoenix.controls.*;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
+import model.DBConnect;
+import application.Message;
+
+
+import java.io.IOException;
 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
@@ -32,14 +49,49 @@ public class LoginController {
     @FXML
     private JFXButton btnLogin;
 
-    Message mgs = new Message();
+    Message msg = new Message();
+    DBConnect connection= new DBConnect();
+    private Connection conn;
+    private PreparedStatement pstmt;
+
 
     @FXML
-    void createLogin(ActionEvent event) {
-//    	System.out.println("로그인 페이지로");
-    	if(tfFname.getText().equals("")){
-    		mgs.setMessage("이름 미입력!");
-    	}
+    void createLogin(ActionEvent event) throws SQLException, IOException {
+
+    	conn = connection.getConnection();
+
+    	String sql = "SELECT *FROM STUDENT where email=? and password=?";
+
+    	pstmt = conn.prepareStatement(sql);
+
+    	pstmt.setString(1, tfFname.getText());
+        pstmt.setString(2, tfPass.getText());
+
+        ResultSet rs = pstmt.executeQuery();
+
+
+        boolean isValid = false;
+
+        while(rs.next())
+        {
+        	isValid = true;
+        }
+
+        if(isValid)
+        {
+
+        	btnLogin.getScene().getWindow().hide();
+
+        	Stage home = new Stage();
+        	Parent root = FXMLLoader.load(getClass().getResource("../view/HomePage.fxml"));
+        	home.setScene(new Scene(root));
+        	home.show();
+        }
+        else
+        {
+        	msg.setMessage("Login is failed");
+        }
+
     }
 
     @FXML

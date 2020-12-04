@@ -85,11 +85,11 @@ public class SignUPController implements Initializable {
 
       ps.executeUpdate();
 
-      msg.setMessage("데이터가 삽입됨");
+      msg.setMessage("Data is Inserted");
    }
     else
     {
-       msg.setMessage("약관 동의");
+       msg.setMessage("Agree terms and condition");
     }
 
    }
