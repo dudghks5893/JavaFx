@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.detailsController">
+   <children>
+      <HBox prefHeight="500.0" prefWidth="360.0">
+         <children>
+            <ScrollPane prefHeight="500.0" prefWidth="360.0">
+               <content>
+                  <VBox prefHeight="500.0" prefWidth="360.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="87.0" prefWidth="350.0">
+                           <children>
+                              <Label text="가게 이름">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="104.0" prefWidth="350.0">
+                           <children>
+                              <Label text="가게 주소,번호,영업시간" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="110.0" prefWidth="350.0">
+                           <children>
+                              <Label text="마스크 지수 평균점수들" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="67.0" prefWidth="350.0">
+                           <children>
+                              <Button fx:id="writing" mnemonicParsing="false" onAction="#GoReview" prefHeight="43.0" prefWidth="120.0" text="리뷰쓰기" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="350.0">
+                           <children>
+                              <Label text="리뷰내용">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <TableView fx:id="tvReview" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="coltext" prefWidth="171.0" text="TEXT" />
+                            <TableColumn fx:id="colscore" minWidth="0.0" prefWidth="171.0" text="MASKID" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+      <Button fx:id="goback" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="67.0" text="뒤로가기" />
+   </children>
+</AnchorPane>
